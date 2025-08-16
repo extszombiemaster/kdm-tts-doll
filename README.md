@@ -1,79 +1,29 @@
 # kdm-tts
-Source for my Kingdom Death: Monster mod for Tabletop Simulator (https://steamcommunity.com/sharedfiles/filedetails/?id=2112101994)
+Source for my Kingdom Death: Monster mod for Tabletop Simulator (SOON)
 
-# Version 1.2
-* Fixed Gloom-Coated Arrow not showing up in Battle UI
-* Fixed Sky Harpoon stats: 1 -> 2 speed
-* "Next Turn" button now always moves the monster controller to the next player, regardless of whether there's a living survivor present.
 
-# Version: 1.1
-* Fixed "Throwing Knife" not showing up in battle UI.
-* Fixed movement tokens not affecting the movement overlay when you pick up a survivor.
-* Fixed "King's Plackart" hit location icon: legs -> body
 
-# Version 1.0
-If you're experiencing search/preview issues, try clearing out your mod data directory and see if it continues.
-* Replaced Population UI with Survivor Board
-    * 3d board instead of 2d UI. This allows the board to be as large as needed since we're not constrained by screen size.
-    * Shows 20 survivors per page instead of 5.
-    * Shows full survivor sheets, along with cards: FAs/Disorders/Abilities/Injuries.
-    * Added filters to hide dead survivors, retired survivors, skip next hunt, and several others.
-    * Added "Move to End" and "Move to Beginning" buttons to more easily sort your survivors.
-* Added "Markers" to survivor sheets: you can now mark survivors with one of 5 different abstract icons:
-    * Yellow Star
-    * Green Triangle
-    * Blue Square
-    * Red Circle
-    * Purple Diamond
-    * (Blank, no marker)
-    * Use these markers to designate classes of survivors, for instance I might designate my main hunters with Yellow Star, and all my injured survivors with the Red Circle.
-    * Added filters for each marker on the Survivor Board, so you can, for example, hide all of your injured survivors.
-    * Left click to cycle forward through markers. Right click to cycle in reverse.
-* Added notes to all survivor sheets.
-* Removed milestone reminders from survivor sheets (age, bold, insight, etc)
-* Added milestone board with shortcut buttons to milestones (age, bold, insight, etc). This takes you to the appropriate event for different campaigns (insight for PotLantern, awake for PotStars)
-* "Pack Survivor" button replaced with "Back to Settlement": no longer creates the intermediate survivor box.
-* Added instructions on Survivor Boxes and Survivor Board for how to modify cards without having to spawn the survivor on a player board.
-* Added two more ability slots on player boards
-* Player boards now support stacking cards (Fighting Arts/Disorders/Abilities/Injuries) in the same slot. You can use this if a survivor has more cards than available slots.
-* Rules now lock when spawned.
-* Hunt/Showdown buttons in the timeline now goes directly to showdown/hunt (with a confirmation popup), instead of taking you to the hunt/showdown setup screen.
-* Fixed blank space when searching for a term with more than 5 results.
-* Spiderlings, lonely fruit, and sunstalker shades now snap to terrain.
-* Spiderlings, lonely fruit, and sunstalker shades now show movement overlays.
-* Ability to change player colors: right click your player marker and "set color tint" to the color of your choice. Your Battle UI marker and player figurine will automatically be updated with the same color after a few seconds.
-* Starting a new campaign now spawns Allister/Ezra/Lucy/Zachary figurines on player 1/2/3/4 markers.
-* "First Day" settlement event card now spawns face up next to the settlement events deck when starting a new campaign.
-* Removed blank space between Battle UI player sections, so it takes up a bit less space.
-* The Flower Knight "A Warm Virus" event can now be added to timeline.
-* "Next Turn" button now automatically moves Monster Controller card to next player with a living survivor.
-* Moved survival tokens and player marker/circle to player boards. This frees up more space above the player board for resource cards, status cards, etc.
-* Export now supports card stacks: no more having to separate one card per slot
-* Import now automatically creates survival tokens.
-* Improved console commands overall
-* Fixed lots of broken gear (thanks Mei for the fixed images!):
-    * Vespertine Bow: 4 -> 6 strength
-    * Lantern Glaive: added missing "Reach 2"
-    * Bone Dagger: added missing "Paired"
-    * Final Lantern: fixed incorrect wording
-    * King Spear: added missing "Bone" keyword
-    * Dragon Gloves: 5 -> 4 armor
-    * Griswaldo: fixed misspelled "Finesse" keyword
-    * Replica Flower Sword: added missing "Devastating 2" and "you cannot dodge" rule
-    * Prism Mace: added missing strength token rule
-    * Sunspot Lantern: fixed misspelled "away"
-    * Calcified Zanbato: fixed swapped affinities
-    * Scrap Dagger: fixed red affinity: left -> down
-    * Whistling Mace: added missing "Whip" keyword
-    * Hunter Whip: added missing up-blue affinity
-* Fixed "Vespertine Foil" not showing up in Battle UI
-* Fixed constellations not being respawned in survivor box.
-* Fixed Lonely Tree showdown positioning.
-* Fixed Gorm showdown positioning.
-* Fixed terrain bag giving errors when you pickup/drop it.
-* Minor fixes to token stacking bugs.
+# Version Beta 0.1
+* Added Frogdog Expansion (quite poorly)
+* Added Whitebox Content
+   * A lot of random beta content
+      * Gear
+      * Fighting Arts
+      * Secret Fighting Arts
+      * Settlement Events
+      * Resources
+   * Elgnirk Christmas
+   * A few Novel Proficiencies
+   * Wrought Ironworks (Blacksmith Extension)
+   * Just a BAG of Indominable Content
+   * 2 Hunt Events
+   * Fig Tree
+   * Alt Art for Founding Stone and Lantern
+* Changed Pattern Backgrounds
+* A few minor errors I saw
 
-# Roadmap
+
+# Roadmap (copied from Mei's depending on how much I care I may get to this, no promises though)
 * Documentation / video tutorial.
 * Speed up load times. 1.0 slowed things down due to using XML UI for everything.
 * White box content and setup in campaign UI.
@@ -131,6 +81,17 @@ If you're experiencing search/preview issues, try clearing out your mod data dir
 * Add ability card for Gigaslayer (from Gigalion).
 * Export/import should record permanent tokens.
 * Packing/unpacking a survivor should include cursed gear.
+
+# Personal Roadmap
+* Fix that annoying audio error when booting
+* Find and fix the issues with CG and CE content
+* Add Frogdog Surv bags
+* Scouts?
+* Arc Survs?
+* More content
+   * If you own any scans or content you would like to see me add, or find any issues, please comment on the steam post or message me on discord, zombifiedoll
+
+
 
 # Console Commands
 You can access console commands by entrying a chat message starting with '>' (no quotes).
