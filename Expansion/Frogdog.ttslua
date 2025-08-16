@@ -1,0 +1,295 @@
+return {
+    name = "Frogdog",	--FIGURE OUT ARC SURVS AND SCOUTS AT SOME POINT
+						--I WANT TO ADD A NEW PILE FOR PATTERNS, MAYBE WE SET IT UP AS A LOCATION AND ADD A NOTE, OR JUST SLAP THE DECK NEAR THE CURRENT DECK FOR NOW THEY WILL GO IN RARE Gear
+						--GOTTA ADD SOMETHING FOR INDOMITABLE, FOR NOW THAT CHUNK WILL GO IN TODO BAG
+						--NOODLING OF DEATH IS IN TODO, CHECK FOREST GATE IN MAIN
+						--ADD SURV MINIS AS THEIR OWN BAG AT SOME POINT
+
+    components = {
+        ["Fighting Arts"] 			= "Frogdog Fighting Arts",
+        ["Secret Fighting Arts"] 	= "Frogdog Secret Fighting Arts",
+        ["Disorders"] 				= "Frogdog Disorders",
+        ["Armor Sets"] 				= "Frogdog Armor Sets",
+        ["Strange Resources"] 		= "Frogdog Strange Resources",
+        ["Innovations"] 			= "Mere Omens",
+        ["Settlement Locations"] 	= "Frogdog Settlement Locations",
+		["Settlement Events"] 		= "Frogdog Settlement Events",
+		["Vermin"] 					= "Golden Frog",
+		["Terrain"] 				= "Frogdog Terrain",
+        ["Terrain Tiles"] 			= { "Mammoth Leaf", "Preserved Dogpole", "Copperfish Den" },
+        ["Rare Gear"] 				= "Frogdog Rare Gear",
+		["Patterns"] 				= "Spite Balm",
+    },
+
+    settlementEvents = {
+        "Starttling Barks",
+		"Gathering Emissions",
+		
+    },
+    terrain = {
+        ["Preserved Dogpole"] 	= { terrainTile = "Preserved Dogpole", count = 1 },
+        ["Copperfish Den"] 		= { terrainTile = "Copperfish Den", count = 1 },
+		["Mammoth Leaf"] 		= { terrainTile = "Mammoth Leaf", count = 1 },
+    },
+
+    terrainTileSizes = {
+        ["Preserved Dogpole"] 	= { x = 1, y = 1 },
+        ["Copperfish Den"] 		= { x = 1, y = 1 },
+        ["Mammoth Leaf"] 		= { x = 3, y = 3 },
+    },
+	
+    settlementLocationGear = {
+        ["Froskrafter"] 	= "Froskrafter Gear",
+        ["Tuskworks"] 		= "Tuskworks Gear",
+    },
+
+    armorStats = {
+        ["Frogdog Armor"]     	= { head = 1, arms = 1, body = 1, waist = 1, legs = 1, modifier = true },
+        ["Frogdog Mask"]      	= { head = 2, arms = 0, body = 0, waist = 0, legs = 0 },
+        ["Frogdog Sleeves"]   	= { head = 0, arms = 2, body = 0, waist = 0, legs = 0 },
+        ["Frogdog Vest"] 		= { head = 0, arms = 0, body = 2, waist = 0, legs = 0 },
+        ["Frogdog Suit"]      	= { head = 0, arms = 0, body = 0, waist = 2, legs = 0 },
+        ["Frogdog Boots"]     	= { head = 0, arms = 0, body = 0, waist = 0, legs = 2 },
+		
+		["Bullfrogdog Armor"]     	= { head = 1, arms = 1, body = 1, waist = 1, legs = 1, modifier = true },
+		["Bullfrog Helm"]     		= { head = 7, arms = 0, body = 0, waist = 0, legs = 0 },
+		["Bullfrog Bracers"]     	= { head = 0, arms = 7, body = 0, waist = 0, legs = 0 },
+		["Bullfrog Cuirass"]     	= { head = 0, arms = 0, body = 7, waist = 0, legs = 0 },
+		["Bullfrog Dress"]     		= { head = 0, arms = 0, body = 0, waist = 7, legs = 0 },
+		["Bullfrog Boots"]     		= { head = 0, arms = 0, body = 0, waist = 0, legs = 7 },
+		["Bullcharge Shield"]     	= { head = 1, arms = 1, body = 1, waist = 1, legs = 1, modifier = true },
+    },
+
+	weaponStats = {
+		["Vertebrayonet"] 		= { speed = 2, accuracy = 8, strength = 2 },
+		["Long Club"]       	= { speed = 2, accuracy = 5, strength = 3 },
+		["Crest Axe"]           = { speed = 3, accuracy = 6, strength = 0 },
+		["Grappleclaw"]      	= { speed = 2, accuracy = 7, strength = 3, deadly = 1 },
+		["Spiked Buckler"]    	= { speed = 1, accuracy = 8, strength = 1 },
+		["Acid Bombs"]         	= { speed = 1, accuracy = 6, strength = 4, slow = true },
+			
+		["Bullfrog Halberd"]    = { speed = 2, accuracy = 8, strength = 5, },
+		["Bullfrog Mace"]       = { speed = 2, accuracy = 9, strength = 7, },
+		["Bullfrog Scimitar"]   = { speed = 2, accuracy = 8, strength = 3, },
+		["Bullcharge Shield"]   = { speed = 1, accuracy = 8, strength = 8, },
+	},
+
+    guidNames = { ["57a410"] = "Frogdog Archive" },	
+
+    archiveEntries = {
+        archive = "Frogdog Archive",
+		entries = {
+			{ "Frogdog Rulebook", "Rulebook" },
+			{ "Frogdog Fighting Arts", "Fighting Arts" },
+			{ "Frogdog Secret Fighting Arts", "Secret Fighting Arts" },
+			{ "Frogdog Disorders", "Disorders" },
+			{ "Frogdog Armor Sets", "Armor Sets" },
+			{ "Frogdog Strange Resources", "Strange Resources" },
+			{ "Frogdog Resources", "Monster Resources" },
+
+			{ "Frogdog Settlement Events", "Settlement Events" },
+
+			{ "Mere Omens", "Innovations" },
+
+			{ "Frogdog Settlement Locations", "Settlement Locations" },
+
+			{ "Froskrafter Gear", "Gear" },
+			{ "Tuskworks Gear", "Gear" },
+
+			{ "Frogdog", "Monster Figurine" },
+
+			{ "Frogdog Hunt Events", "Monster Hunt Events" },
+
+			{ "Frogdog Info", "AI" },
+			{ "Frogdog Basic Action", "AI" },
+			{ "Frogdog Basic AI", "AI" },
+			{ "Frogdog Advanced AI", "AI" },
+			{ "Frogdog Legendary AI", "AI" },
+			{ "Frogdog Special AI", "AI" },
+			{ "Bullfrogdog Origin AI", "AI" },	--FIND A CLEANER WAY TO DO THIS?
+			{ "Frogdog Basic Farts", "AI" },
+			{ "Frogdog Advanced Farts", "AI" },
+			{ "Frogdog Special Farts", "AI" },
+			{ "Mere Omens", "AI" },			--IS THIS NEEDED? WHERE DOES IT ACTUALLY GO? LMAO
+			{ "Bullfrogdog Hit Locations", "AI" },
+			{ "Frogdog Hit Locations", "Hit Locations" },
+		},
+    },
+
+				pages = {
+				["Frogdog Rulebook"] = {
+					keywords = { "Frogdog", "Rulebook", "Cover" },
+					state = 1,
+				},
+				["Frogdog Rules 1"] = {
+					keywords = { "Frogdog", "Rules" },
+					state = 2,
+				},
+				["Frogdog Rules 2"] = {
+					keywords = { "Frogdog", "Rules" },
+					state = 3,
+				},
+				["Frogdog Rules 3"] = {
+					keywords = { "Frogdog", "Rules" },
+					state = 4,
+				},
+				["Devour the White Lion"] = {
+					keywords = { "Devour", "The", "White", "Lion", "Prologue" },
+					state = 5,
+					showdown = true, 			--CHECK WHITE LION FIGHT PROLOGUE
+				},
+				["Lingering Cough"] = {
+					keywords = { "Lingering", "Cough" },
+					state = 6,
+					timelineEvent = true,
+				},
+				["Metamorphosis Festival"] = {
+					keywords = { "Metamorphosis", "Festival" },
+					state = 7,
+				},
+				["Noodling of Death"] = {
+					keywords = { "Noodling", "of", "Death" },
+					state = 8,					--CHECK FLOWER KNIGHT GATES
+				},
+				["Sad Frogdog Song"] = {
+					keywords = { "Sad", "Frogdog", "Song" },
+					state = 9,
+				},
+				["Showdown: Bullfrogdog"] = {
+					keywords = { "Showdown:", "Bullfrogdog", "Frogdog" },
+					state = 10,
+					showdown = true,			--CHECK OTHER ANCIENTS
+				},
+				["Showdown: Frogdog"] = {
+					keywords = { "Showdown:", "Frogdog" },
+					state = 11,
+					showdown = true,
+				},
+				["Frogdog Art"] = {
+					keywords = { "Frogdog", "Art" },
+					state = 12,
+				},
+			},
+        },
+    },
+
+		monsters = {
+		{
+			name = "Frogdog",
+			size = { x = 3, y = 3 },
+			rules = { "Frogdog Rulebook", 11 },
+			huntTrack = { "H", "M", "H", "H", "M", "O", "M", "H", "M", "H", "H" },
+			position = "(11, 8)",
+			rotation = "(0, 180, 0)",	--NO IDEA IF THIS EVEN WORKS, MIGHT JUST HAVE TO ADD A NOTE?
+			playerPositions = { "(9, 9)", "(9, 10)", "(12, 10)", "(13, 10)" },
+			fixedTerrain = {
+				{
+					terrain = "3 Mammoth Leaf",
+					positions = { "(11, 3)", "(7, 9)", "(13, 12)" },
+					rotations = { { x = 0, y = 180, z = 0 }, { x = 0, y = 180, z = 0 }, { x = 0, y = 180, z = 0 } },
+				},
+			},
+			levels = {
+				{
+					name = "Prologue",
+					level = 1,
+					showdown = {
+						rules = { "Frogdog Rulebook", 5 },
+						position = "(12, 8)",
+						playerPositions = { "(10, 13)", "(10, 14)", "(14, 13)", "(14, 14)" },
+						
+						customBasic = { "Just a Taste", "Phantasmagoria", "Gnashing and Barking", "Twitching Kick" },
+						customAdvanced = { "Snatch and Squash", "Abrasive Lick", "Soaring Bony Punch", },
+						topAiCards = { "Wet Slap" },
+						starting = {
+							special = { "Leap", "Foul Stench", "Double Sphincter", "Gaseous Bloat" },
+							misc = { "Frogdog Basic Farts" },
+						},
+						topHitLocationCards = { "Twitching Digit Flexors" },
+						movement = 6,
+						toughness = 7,
+						unfixedTerrain = { "Copperfish Den" },
+						fixedTerrain = {
+							{
+								terrain = "3 Mammoth Leaf",
+								positions = { "(10, 5)", "(15, 8)", "(12, 13)" },
+								rotations = { { x = 0, y = 180, z = 0 }, { x = 0, y = 180, z = 0 }, { x = 0, y = 180, z = 0 } },
+							},
+						},
+					},
+				},
+				{
+					name = "Level 1",
+					level = 1,
+					monsterHuntPosition = 4,
+					showdown = {
+						basic = 8,
+						advanced = 2,
+						starting = {
+							special = { "Leap", "Foul Stench", "Double Sphincter", "Gaseous Bloat" },
+							misc = { "Frogdog Basic Farts" },
+						},
+						movement = 7,
+						toughness = 8,
+					},
+				},
+				{
+					name = "Level 2",
+					level = 2,
+					monsterHuntPosition = 7,
+					showdown = {
+						basic = 8,
+						advanced = 6,
+						starting = {
+							special = { "Leap", "Foul Stench", "Double Sphincter", "Gaseous Bloat", "Mature" },
+							misc = { "Frogdog Basic Farts", "Frogdog Advanced Farts" },
+						},
+						movement = 9,
+						toughness = 11,
+						speed = 1,
+						damage = 1,
+					},
+				},
+				{
+					name = "Level 3",
+					level = 3,
+					monsterHuntPosition = 9,
+					showdown = {
+						basic = 9,
+						advanced = 8,
+						legendary = 2,
+						starting = {
+							special = { "Leap", "Foul Stench", "Double Sphincter", "Gaseous Bloat", "Mature", "Indomitable", "Indigestion" },
+							misc = { "Frogdog Advanced Farts", "Frogdog Legendary Farts" },
+						},
+						movement = 10,
+						toughness = 17,
+						speed = 2,
+						damage = 2,
+						accuracy = 2,
+					},
+				},
+				{
+					name = "Bullfrogdog",
+					level = 3,
+					monsterHuntPosition = 9,
+					showdown = {
+						basic = 9,
+						advanced = 7,
+						legendary = 2,
+						starting = {
+							special = { "Foul Stench", "Double Sphincter", "Gaseous Bloat", "Mature", "Indomitable", "Indigestion", "Bullish Charge" },
+							misc = { "Frogdog Advanced Farts", "Frogdog Legendary Farts", "Bullfrogdog Origin AI", "Bullfrogdog Hit Locations" },
+						},
+						movement = 10,
+						toughness = 17,
+						speed = 2,
+						damage = 2,
+						accuracy = 2,
+						luck = 1,
+					},
+				},
+			},
+		},
+	},
+}
