@@ -15,6 +15,7 @@ local Manhunter = require("Kdm/Expansion/Manhunter")
 local Slenderman = require("Kdm/Expansion/Slenderman")
 local Spidicules = require("Kdm/Expansion/Spidicules")
 local Sunstalker = require("Kdm/Expansion/Sunstalker")
+local Frogdog = require ("Kdm/Expansion/Frogdog")
 local CcgHomebrew = require("Kdm/Expansion/CcgHomebrew")
 local ForsakerSisters = require("Kdm/Expansion/ForsakerSisters")
 local StormKnight = require("Kdm/Expansion/StormKnight")
@@ -23,6 +24,7 @@ local DrifterKnight = require("Kdm/Expansion/DrifterKnight")
 local AllisonTheTwilightKnight = require("Kdm/Expansion/AllisonTheTwilightKnight")
 local TracksOfDeath = require("Kdm/Expansion/TracksOfDeath")
 local HarvesterWorm = require("Kdm/Expansion/HarvesterWorm")
+
 
 ---------------------------------------------------------------------------------------------------
 
@@ -45,6 +47,7 @@ function Expansion.Init(saveState)
         Slenderman,
         Spidicules,
         Sunstalker,
+		Frogdog,
         --CcgHomebrew,
         ForsakerSisters,
         StormKnight,
