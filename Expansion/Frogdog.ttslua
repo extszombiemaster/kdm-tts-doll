@@ -1,10 +1,5 @@
 return {
-    name = "Frogdog",	--FIGURE OUT ARC SURVS AND SCOUTS AT SOME POINT
-						--I WANT TO ADD A NEW PILE FOR PATTERNS, MAYBE WE SET IT UP AS A LOCATION AND ADD A NOTE, OR JUST SLAP THE DECK NEAR THE CURRENT DECK FOR NOW THEY WILL GO IN RARE Gear
-						--GOTTA ADD SOMETHING FOR INDOMITABLE, FOR NOW THAT CHUNK WILL GO IN TODO BAG
-						--NOODLING OF DEATH IS IN TODO, CHECK FOREST GATE IN MAIN
-						--ADD SURV MINIS AS THEIR OWN BAG AT SOME POINT
-
+    name = "Frogdog",	
     components = {
         ["Fighting Arts"] 			= "Frogdog Fighting Arts",
         ["Secret Fighting Arts"] 	= "Frogdog Secret Fighting Arts",
@@ -20,30 +15,31 @@ return {
         ["Rare Gear"] 				= "Frogdog Rare Gear",
 		["Patterns"] 				= "Spite Balm",
     },
-
-    settlementEvents = {
+	
+	    settlementEvents = {
         "Starttling Barks",
 		"Gathering Emissions",
 		
     },
-    terrain = {
+	
+	    terrain = {
         ["Preserved Dogpole"] 	= { terrainTile = "Preserved Dogpole", count = 1 },
         ["Copperfish Den"] 		= { terrainTile = "Copperfish Den", count = 1 },
 		["Mammoth Leaf"] 		= { terrainTile = "Mammoth Leaf", count = 1 },
     },
-
-    terrainTileSizes = {
+	
+	    terrainTileSizes = {
         ["Preserved Dogpole"] 	= { x = 1, y = 1 },
         ["Copperfish Den"] 		= { x = 1, y = 1 },
         ["Mammoth Leaf"] 		= { x = 3, y = 3 },
     },
 	
-    settlementLocationGear = {
+	    settlementLocationGear = {
         ["Froskrafter"] 	= "Froskrafter Gear",
         ["Tuskworks"] 		= "Tuskworks Gear",
     },
-
-    armorStats = {
+	
+	    armorStats = {
         ["Frogdog Armor"]     	= { head = 1, arms = 1, body = 1, waist = 1, legs = 1, modifier = true },
         ["Frogdog Mask"]      	= { head = 2, arms = 0, body = 0, waist = 0, legs = 0 },
         ["Frogdog Sleeves"]   	= { head = 0, arms = 2, body = 0, waist = 0, legs = 0 },
@@ -57,10 +53,9 @@ return {
 		["Bullfrog Cuirass"]     	= { head = 0, arms = 0, body = 7, waist = 0, legs = 0 },
 		["Bullfrog Dress"]     		= { head = 0, arms = 0, body = 0, waist = 7, legs = 0 },
 		["Bullfrog Boots"]     		= { head = 0, arms = 0, body = 0, waist = 0, legs = 7 },
-		["Bullcharge Shield"]     	= { head = 1, arms = 1, body = 1, waist = 1, legs = 1, modifier = true },
     },
-
-	weaponStats = {
+	
+		weaponStats = {
 		["Vertebrayonet"] 		= { speed = 2, accuracy = 8, strength = 2 },
 		["Long Club"]       	= { speed = 2, accuracy = 5, strength = 3 },
 		["Crest Axe"]           = { speed = 3, accuracy = 6, strength = 0 },
@@ -68,14 +63,14 @@ return {
 		["Spiked Buckler"]    	= { speed = 1, accuracy = 8, strength = 1 },
 		["Acid Bombs"]         	= { speed = 1, accuracy = 6, strength = 4, slow = true },
 			
-		["Bullfrog Halberd"]    = { speed = 2, accuracy = 8, strength = 5, },
-		["Bullfrog Mace"]       = { speed = 2, accuracy = 9, strength = 7, },
-		["Bullfrog Scimitar"]   = { speed = 2, accuracy = 8, strength = 3, },
-		["Bullcharge Shield"]   = { speed = 1, accuracy = 8, strength = 8, },
+		["Bullfrog Halberd"]    = { speed = 2, accuracy = 8, strength = 5 },
+		["Bullfrog Mace"]       = { speed = 2, accuracy = 9, strength = 7 },
+		["Bullfrog Scimitar"]   = { speed = 2, accuracy = 8, strength = 3 },
+		["Bullcharge Shield"]   = { speed = 1, accuracy = 8, strength = 8 },
 	},
-
-    guidNames = { ["57a410"] = "Frogdog Archive" },	
-
+	
+   guidNames = { ["57a410"] = "Frogdog Archive" },
+		
     archiveEntries = {
         archive = "Frogdog Archive",
 		entries = {
@@ -115,7 +110,7 @@ return {
 			{ "Frogdog Hit Locations", "Hit Locations" },
 		},
     },
-
+	
 				pages = {
 				["Frogdog Rulebook"] = {
 					keywords = { "Frogdog", "Rulebook", "Cover" },
@@ -170,10 +165,8 @@ return {
 					state = 12,
 				},
 			},
-        },
-    },
-
-		monsters = {
+			
+					monsters = {
 		{
 			name = "Frogdog",
 			size = { x = 3, y = 3 },
